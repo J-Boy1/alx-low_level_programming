@@ -4,8 +4,9 @@
 /**
  * main - the entry point
  *
- * return; always 0 (success)
+ * return: Always 0 (success)
  */
+
 int main(void)
 {
 	int n;
