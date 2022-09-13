@@ -7,10 +7,12 @@
  */
 int main(void)
 {
-	char p = (putchar);
+	char word[p] = _putchar;
+	int p;
+	for (p = 0; p < 8; p++)
 
-	putchar (p);
-	putchar ('\n');
+	_putchar (p);
+	_putchar ('\n');
 
 	return (0);
 }
