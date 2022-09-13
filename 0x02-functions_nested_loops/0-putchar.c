@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - Check description
- * 
+ * main - Entry point
+ *
  * Return: 0.
  */
 int main(void)
