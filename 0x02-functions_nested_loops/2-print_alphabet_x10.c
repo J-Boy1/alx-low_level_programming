@@ -2,8 +2,7 @@
 
 /**
  * main - check code
- * Description: function uses _putchar function to print
- * alphabet in lowercase 10 times
+ * Description: print_alphabet_x10
  * Return: Nothing.
  */
 
