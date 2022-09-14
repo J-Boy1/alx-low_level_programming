@@ -2,11 +2,10 @@
 
 /**
  * main - check code
- * Description: It prints the alphabet in lowercase 
+ *
  * Return: Nothing.
  */
-
- void print_alphabet_x10(void)
+void print_alphabet_x10(void)
 {
 	char i;
 	int j;
