@@ -2,7 +2,7 @@
 
 /**
  * main - check code
- * Description: print_alphabet_x10
+ * Description: It prints the alphabet in lowercase 
  * Return: Nothing.
  */
 
