@@ -3,7 +3,7 @@
 #include <math.h>
 #include <time.h>
 
-int main()
+int main(void)
 {
     srand((unsigned int)(time(NULL)));
     int i;
@@ -12,7 +12,8 @@ int main()
     printf("Press enter to get a twelve-character password\n");
     getchar();
 
-    for (i = 0; i < 4; i++) {
+    for (i = 0; i < 4; i++) 
+    {
         pass[i] = rand() % 9;
         char capLetter = 'A' + (rand() % 26);
         pass[i + 2] = capLetter;
