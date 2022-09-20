@@ -1,43 +1,24 @@
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
-int password(int password_length)
+#include <math.h>
+#include <time.h>
+
+int main()
 {
-    char list[] = "1234567890qwertyuiopasdfghjklzxcvbnm!@#$%^&*()_- +=QWERTYUIOPASDFGHJKLZXCVBNM[]{}";
-    printf("\t");
-    
-    for (int i = 0; i < password_length; i++)
-    {
-        printf("*");
+    srand((unsigned int)(time(NULL)));
+    int i;
+    char pass[12];
+
+    printf("Press enter to get a twelve-character password\n");
+    getchar();
+
+    for (i = 0; i < 4; i++) {
+        pass[i] = rand() % 9;
+        char capLetter = 'A' + (rand() % 26);
+        pass[i + 2] = capLetter;
+        char letter = 'a' + (rand() % 26);
+        pass[i + 3] = letter;
+        printf("%d%c%c", pass[i], pass[i + 2], pass[i + 3]);
     }
-    printf("\n");
-    printf("\t");
-    srand(time(NULL));
-    for (int i = 0; i < password_length; i++)
-    {
-	    printf("%c", list[rand() % (sizeof list - 1)]);
-    }
-    printf("\n");
-    printf("\t");
-    
-    for(int i = 0; i < password_length; i++) 
-    {
-        printf("*");
-    }
-    printf("\n");
-}
-int main(void) 
-{
-    int password_length;
-    printf("\n\t*********************************\n\n");
-    printf("\tWelcome to the password generator\n\n");
-    printf("\t*********************************\n");
-    printf("\n\tEnter length of the password = ");
-    scanf("%d", &password_length);
-    
-    printf("\n");
-    password(password_length);
-    printf("\n");
-    
-return (0);
+    printf("\n\n");
 }
